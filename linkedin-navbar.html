@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/06489297db.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .navbar {
+            height: 80px;
+            width: 100%;
+            border-top: 1px solid gray;
+            display: flex;
+        }
+
+        .searchbar {
+            height: 70px;
+            width: 400px;
+            display: flex;
+            margin-top: 15px;
+
+        }
+
+        .searchbar img {
+            height: 45px;
+            width: 35px;
+            margin-left: 100px;
+            border-radius: 5px;
+
+        }
+
+        .glass {
+            height: 50px;
+            width: 250px;
+            display: flex;
+            background-color: #eef3f8;
+            justify-content: left;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+
+        .glass i {
+            margin-left: 20px;
+            margin-top: 15px;
+            font-size: 18px;
+        }
+
+        .glass input {
+            height: 40px;
+            width: 170px;
+            font-size: 20px;
+            background-color: #eef3f8;
+            border: none;
+            margin-left: 12px;
+            outline: none;
+        }
+
+        .middel {
+            height: 70px;
+            width: 600px;
+
+            margin-top: 5px;
+            margin-left: 100px;
+            display: flex;
+        }
+
+        .home {
+            height: 70px;
+            width: 100px;
+            color: black;
+
+        }
+
+        .middel i {
+            font-size: 30px;
+            margin-top: 15px;
+            color: #666666;
+        }
+
+        .network {
+            height: 70px;
+            width: 100px;
+
+
+        }
+
+        .job {
+            height: 70px;
+            width: 100px;
+
+
+        }
+
+        .msg {
+            height: 70px;
+            width: 100px;
+
+
+        }
+
+        .noti {
+            height: 70px;
+            width: 100px;
+
+        }
+
+        .me {
+            height: 70px;
+            width: 100px;
+
+        }
+
+        .me img {
+            height: 40px;
+            width: 40px;
+            border-radius: 25px;
+            margin-top: 5px;
+            margin-left: 15px;
+        }
+
+        .meee {
+            margin-left: 23px;
+        }
+
+        .work {
+            height: 70px;
+            width: 300px;
+            display: flex;
+        }
+
+        .try {
+            height: 80px;
+            width: 80px;
+            border-left: 1px solid gray;
+            padding-left: 10px;
+        }
+
+        .try img {
+            height: 40px;
+            width: 40px;
+            margin-top: 7px;
+            margin-left: 7px;
+        }
+
+        .free {
+            height: 50px;
+            width: 120px;
+            margin-top: 20px;
+        }
+
+        .free>div {
+            margin-left: 30px;
+        }
+
+        .body {
+            width: 100%;
+            height: 700px;
+            display: flex;
+            margin-top: 30px;
+            background-color: rgb(247, 241, 241);
+        }
+
+        .profile {
+            width: 300px;
+            height: 500px;
+            margin-left: 120px;
+            margin-top: 20px;
+            border: 1px solid grey;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .profilefirst {
+            height: 200px;
+            width: 300px;
+
+
+        }
+
+        .photo {
+            height: 80px;
+            width: 300px;
+            background-color: #b4c5c8;
+            border: 1px solid white;
+            border-radius: 10px;
+
+
+        }
+
+        .photo img {
+            height: 90px;
+            width: 90px;
+            border-radius: 45px;
+            margin-left: 100px;
+            margin-top: 20px;
+        }
+
+        .tech {
+            margin-top: 30px;
+            margin-left: 40px;
+        }
+
+        .profilesecond {
+            height: 100px;
+            width: 300px;
+            border-top: 1px solid gray;
+            display: flex;
+
+        }
+
+        .profilesecond>div :nth-child(1) {
+            margin-left: 80px;
+            margin-top: 20px;
+        }
+
+        .profilethird {
+            height: 70px;
+            width: 250px;
+            border-top: 1px solid gray;
+            padding-top: 20px;
+            padding-left: 50px;
+        }
+
+        .profileforth {
+            height: 20px;
+            width: 230px;
+            border-top: 1px solid gray;
+            display: flex;
+            padding-top: 20px;
+            padding-left: 70px;
+
+        }
+
+        .post {
+            width: 500px;
+            height: 500px;
+            margin-left: 15px;
+            margin-top: 20px;
+            border-radius: 15px;
+
+        }
+
+        .top {
+            height: 150px;
+            width: 500px;
+            background-color: white;
+            border-radius: 15px;
+
+        }
+
+        .top img {
+            height: 50px;
+            width: 50px;
+            border-radius: 25px;
+            margin-left: 15px;
+            margin-top: 20px;
+        }
+
+        .start {
+            margin-left: 80px;
+            margin-top: -52px;
+            border: 1px solid gray;
+            height: 30px;
+            width: 400px;
+            border-radius: 15px;
+            font-size: 18px;
+            color: gray;
+            padding-top: 15px;
+
+        }
+
+        .event {
+            width: 500px;
+            height: 50px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .regular i {
+            color: blue;
+            font-size: 20px;
+        }
+
+        .brand i {
+            color: green;
+            font-size: 20px;
+        }
+
+        .calander i {
+            color: rgb(165, 114, 42);
+            font-size: 20px;
+        }
+
+        .artical i {
+            color: brown;
+            font-size: 20px;
+        }
+
+        .down {
+            margin-top: 10px;
+            height: 400px;
+            width: 500px;
+            background-color: white;
+            border-radius: 15px;
+        }
+
+        .like {
+            height: 40px;
+            margin-left: 25px;
+            width: 450px;
+            display: flex;
+            border-bottom: 1px solid gray;
+
+        }
+
+        .like img {
+            height: 30px;
+            width: 30px;
+            margin-left: 10px;
+        }
+
+        .Adecco {
+            display: flex;
+        }
+
+        .Adecco img {
+            height: 50px;
+            width: 50px;
+            margin-left: 50px;
+        }
+
+        .resent img {
+            height: 200px;
+            width: 500px;
+        }
+
+        .news {
+            width: 250px;
+            height: 300px;
+            border: 1px solid black;
+            margin-left: 15px;
+            margin-top: 20px;
+            background-color: white;
+            border-radius: 15px;
+            padding-left: 30px;
+            padding-top: 30px;
+        }
+
+        @media screen and (max-width:500px) {
+            * {
+                margin: 0%;
+                padding: 0%;
+            }
+
+            .body {
+                width: 1000px;
+                height: 2000px;
+                flex-direction: column;
+                margin-top: 30px;
+                background-color: rgb(247, 241, 241);
+            }
+
+            .navbar {
+                height: 70px;
+                width: 700px;
+                border-top: 1px solid gray;
+                display: flex;
+            }
+
+            .profile {
+                width: 700px;
+                height: 700px;
+                margin-left: 150px;
+                margin-top: 20px;
+                border: 1px solid grey;
+                border-radius: 10px;
+                background-color: white;
+            }
+
+
+            .profilefirst {
+                height: 300px;
+                width: 700px;
+
+
+
+            }
+
+            .photo {
+                height: 150px;
+                width: 700px;
+                background-color: #b4c5c8;
+                border: 1px solid black;
+                border-radius: 10px;
+
+
+            }
+
+            .photo img {
+                height: 200px;
+                width: 200px;
+                border-radius: 100px;
+                margin-left: 220px;
+                margin-top: 20px;
+            }
+
+            .tech {
+                margin-top: 50px;
+                margin-left: 40px;
+            }
+
+            .profilesecond {
+                height: 150px;
+                width: 650px;
+                border-top: 1px solid gray;
+                display: flex;
+
+            }
+
+            .profilesecond>div :nth-child(1) {
+                margin-left: 80px;
+                margin-top: 20px;
+                font-size: 20px;
+            }
+
+
+            .profilethird {
+                height: 150px;
+                width: 650px;
+                border-top: 1px solid gray;
+                padding-top: 20px;
+                padding-left: 50px;
+                font-size: 25px;
+            }
+
+            .profileforth {
+                height: 100px;
+                width: 650px;
+                border-top: 1px solid gray;
+                display: flex;
+                padding-top: 20px;
+                padding-left: 70px;
+                font-size: 25px;
+
+            }
+
+            .post {
+                width: 700px;
+                height: 500px;
+                margin-left: 150px;
+                margin-top: 20px;
+                border-radius: 15px;
+            }
+
+            .top {
+                height: 250px;
+                width: 700px;
+                background-color: white;
+                border-radius: 15px;
+
+            }
+
+            .top img {
+                height: 100px;
+                width: 100px;
+                border-radius: 50px;
+                margin-left: 15px;
+                margin-top: 20px;
+            }
+
+            .start {
+                margin-left: 170px;
+                margin-top: -52px;
+                border: 1px solid gray;
+                height: 60px;
+                width: 400px;
+                border-radius: 15px;
+                font-size: 25px;
+                color: gray;
+                padding-top: 15px;
+
+            }
+
+            .event {
+                width: 600px;
+                height: 50px;
+                font-size: 20px;
+                margin-left: 60px;
+                margin-top: 50px;
+                display: flex;
+                justify-content: space-around;
+
+            }
+
+            .regular i {
+                color: blue;
+                font-size: 20px;
+            }
+
+            .brand i {
+                color: green;
+                font-size: 20px;
+            }
+
+            .calander i {
+                color: rgb(165, 114, 42);
+                font-size: 20px;
+            }
+
+            .artical i {
+                color: brown;
+                font-size: 20px;
+            }
+
+            .down {
+                margin-top: 10px;
+                height: 750px;
+                width: 700px;
+                background-color: white;
+                border-radius: 15px;
+            }
+
+            .like {
+                height:60px;
+                margin-left: 25px;
+                width: 700px;
+                display: flex;
+                border-bottom: 1px solid gray;
+                font-size: 25px;
+
+            }
+
+            .like img {
+                height: 60px;
+                width: 60px;
+                margin-left: 10px;
+            }
+
+            .Adecco {
+                display: flex;
+                font-size: 25px;
+                height: 100px;
+                width: 700px;
+                font-size: 25px;
+            }
+
+            .Adecco img {
+                height: 100px;
+                width: 100px;
+                margin-left: 50px;
+            }
+             .resent{
+                font-size: 20px;
+             }
+            .resent img {
+                height: 500px;
+                width: 700px;
+            }
+
+            .news {
+                width: 670px;
+                height: 500px;
+                border: 1px solid black;
+                margin-left: 150px;
+                margin-top: 500px;
+                background-color: white;
+                border-radius: 15px;
+                padding-left: 30px;
+                padding-top: 30px;
+                font-size: 25px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="screen">
+        <div class="navbar">
+            <div class="searchbar">
+                <img src="data:image/png;base64,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"
+                    alt="">
+                <div class="glass">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input placeholder="search" type="text">
+                </div>
+            </div>
+            <div class="middel">
+                <div class="home">
+                    <i class="fa-solid fa-house-chimney"></i><br>
+                    Home
+                </div>
+                <div class="network">
+                    <i class="fa-solid fa-user-group"></i><br>
+                    My network
+                </div>
+                <div class="job">
+                    <i class="fa-solid fa-briefcase"></i><br>
+                    Jobs
+                </div>
+                <div class="msg">
+                    <i class="fa-solid fa-comment-dots"></i><br>
+                    messaging
+                </div>
+                <div class="noti">
+                    <i class="fa-solid fa-bell"></i><br>
+                    notifications
+                </div>
+                <div class="me">
+                    <img src="https://media.licdn.com/dms/image/C4E03AQGvXlEYY08elQ/profile-displayphoto-shrink_100_100/0/1631716060825?e=1681344000&v=beta&t=o5zJLhHYcgkdR4D7GBk_IjffWgq6siCQAn36gcTbwwQ"
+                        alt=""> <br>
+                    <div class="meee"> Me </div>
+                </div>
+
+            </div>
+            <div class="work">
+                <div class="try">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCAerAGnsiJkRYNw-SinX5DYZKKhkhSvmffnG65u7HuuGKw9VZvPNmAM_3nXjN3WPod5U&usqp=CAU"
+                        alt="">
+                    Work <i class="fa-solid fa-caret-down"></i>
+
+                </div>
+                <div class="free">
+                    <u>Try Premium For</u> <br>
+                    <div> <u>Free</u></div>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="profile">
+                <div class="profilefirst">
+                    <div class="photo">
+                        <img src="https://media.licdn.com/dms/image/C4E03AQGvXlEYY08elQ/profile-displayphoto-shrink_100_100/0/1631716060825?e=1681344000&v=beta&t=o5zJLhHYcgkdR4D7GBk_IjffWgq6siCQAn36gcTbwwQ"
+                            alt="">
+                    </div>
+                    <div class="tech">
+                        <h1> Vibha Bakkam</h1>
+                        <p>
+                            Student at Dr. Babasaheb Ambedkar Technological University
+                        </p>
+                    </div>
+                </div>
+                <div class="profilesecond">
+                    <div>
+                        <p>Connections</p>
+                        <p> <b>Grow Youre Network</b></p>
+                    </div>
+                    <div style="color: rgb(38, 80, 186); margin-left: 100px; margin-top: 50px; font-size: 25px;">
+                        9
+                    </div>
+                </div>
+                <div class="profilethird">
+                    Access Exclusive Tools & insights</p>
+                    <p><u><b>Try Premium For Free</b></u></p>
+                </div>
+                <div class="profileforth">
+                    <i class="fa-solid fa-bookmark"></i>
+                    <p>My Items</p>
+                </div>
+            </div>
+            <div class="post">
+                <div class="top">
+                    <img
+                        src="https://media.licdn.com/dms/image/C4E03AQGvXlEYY08elQ/profile-displayphoto-shrink_100_100/0/1631716060825?e=1681344000&v=beta&t=o5zJLhHYcgkdR4D7GBk_IjffWgq6siCQAn36gcTbwwQ">
+                    <div class="start"> Start a Post </div>
+                    <div class="event">
+                        <div class="regular">
+                            <i class="fa-regular fa-image"></i>
+                            <p> photo</p>
+                        </div>
+                        <div class="brand">
+                            <i class="fa-brands fa-youtube"></i>
+                            <p>Video</p>
+                        </div>
+                        <div class="calander">
+                            <i class="fa-regular fa-calendar"></i>
+                            <p>Event</p>
+                        </div>
+                        <div class="artical">
+                            <i class="fa-regular fa-file-lines"></i>
+                            <p> write Artical</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="down">
+                    <div class="like">
+                        <img src="https://media.licdn.com/dms/image/C510BAQEeK1BH5vKw8Q/company-logo_100_100/0/1519866519124?e=1683763200&v=beta&t=VL4-FfMTOevSEmk_PBz1jn5-PnqsU8qbyFtdzplaXA0"
+                            alt="">
+                        <p><strong>Adecco</strong> like this</p>
+                    </div>
+                    <div class="Adecco">
+                        <div>
+                            <img src="https://media.licdn.com/dms/image/C510BAQEeK1BH5vKw8Q/company-logo_100_100/0/1519866519124?e=1683763200&v=beta&t=VL4-FfMTOevSEmk_PBz1jn5-PnqsU8qbyFtdzplaXA0"
+                                alt="">
+                        </div>
+                        <div>
+                            <strong>Adecco</strong><br>
+                            6,028,804 Followers
+                        </div>
+                    </div>
+                    <div class="resent">
+                        <p>Is your career well-planned for the year ahead? Ask yourself these 5 questions about what you
+                            want from your job in 2023: https://lnkd.in/e5CNrmkg</p>
+                        <img src="https://media.licdn.com/dms/image/C4E22AQGgg9G6obo8CA/feedshare-shrink_800/0/1675840802497?e=1678924800&v=beta&t=r8HZSIQMrLV6kTGNk0bnWJzbGNMNlLN34ZymXA-8Uzo"
+                            alt="">
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="news">
+                <div>
+                    <strong>LinkedIn News</strong> <br>
+
+                    Google unveils ChatGPT rival
+                    <br>
+                    1d ago • 3,290 readers
+                    <br>
+                    PwC to hire 30,000
+                    2d ago
+                    <br>
+                    • 33,790 readers
+                    <br>
+                    Mid-level IT staff under the radar
+                    <br>
+                    20h ago • 2,294 readers
+                    <br>
+                    Hybrid hiring is were to stay
+                    <br>
+                    2d ago • 1,888 readers
+                    <br>
+                    Startups focus on cost-cutting
+                    <br>
+                    20h ago • 118 readers
+                    <br>
+
+                    Show more
+                </div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
